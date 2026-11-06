@@ -2,6 +2,13 @@
 
 Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/). A cada atualização de conteúdo, aumentar `version` em `.claude-plugin/plugin.json`: com `version` definido, os usuários permanecem na versão instalada até ela mudar.
 
+## [Não lançado]
+### Documentação
+- README reescrito: proposta de valor, diagrama do fluxo, exemplo real anonimizado do laboratório, status atualizado e instalação pelo marketplace.
+- `.claude-plugin/marketplace.json` na raiz do repositório (`redteam-recon@logospayload-redteam`).
+- README próprio do plugin, `SECURITY.md`, `.gitignore` para dados de coleta e modelos de issue e PR.
+- Sem mudança no conteúdo da skill; a versão continua 0.2.1.
+
 ## [0.2.1] - 2026-11-06
 ### Corrigido
 - Falso positivo crítico em Samba: a versão que o `nmap -sV` informa para Samba e PostgreSQL é heurística. Achado cuja versão contradiz o SO (ex.: Samba 4.6.2 em Ubuntu 24.04) ou que pode ter backport vira "Candidato a confirmar" e nunca recebe Crítico nem Alto.

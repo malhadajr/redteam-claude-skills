@@ -1,0 +1,17 @@
+{
+  "name": "logospayload-redteam",
+  "description": "Skills do Claude Code para red team em avaliações de segurança autorizadas.",
+  "owner": {
+    "name": "LogosPayload",
+    "url": "https://github.com/malhadajr"
+  },
+  "plugins": [
+    {
+      "name": "redteam-recon",
+      "source": "./redteam-recon",
+      "description": "Triagem passiva de saídas de nmap/netstat: topologia, inventário, CVEs (cheatsheet + NVD + KEV) e relatório. Sem varredura nem exploração.",
+      "category": "security",
+      "tags": ["red-team", "recon", "nmap", "cve", "nvd", "kev", "relatorio"]
+    }
+  ]
+}

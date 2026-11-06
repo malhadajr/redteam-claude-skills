@@ -8,7 +8,7 @@ Coleção de skills do Claude Code para ferramentas de red team em avaliações 
 
 | Plugin | Versão | O que faz |
 |---|---|---|
-| [`redteam-recon`](redteam-recon/) | 0.2.0 | Triagem de reconhecimento: analisa saídas de nmap/netstat, mapeia a superfície de ataque, correlaciona CVEs e gera relatório técnico e executivo. |
+| [`redteam-recon`](redteam-recon/) | 0.2.1 | Triagem de reconhecimento: analisa saídas de nmap/netstat, mapeia a superfície de ataque, correlaciona CVEs e gera relatório técnico e executivo. |
 
 ## redteam-recon
 
@@ -62,7 +62,7 @@ Versão inicial (0.x). Passou no `claude plugin validate`, mas ainda não foi va
 Use **apenas** com autorização formal por escrito do dono dos sistemas. Os autores não se responsabilizam por uso indevido.
 
 ## Licença
-MIT. Autor: [AUTOR]
+MIT. Autor: LogosPayload
 
 ---
 
@@ -76,7 +76,7 @@ Claude Code skills for red team tooling in **authorized** security assessments.
 
 | Plugin | Version | What it does |
 |---|---|---|
-| [`redteam-recon`](redteam-recon/) | 0.2.0 | Reconnaissance triage: analyzes nmap/netstat output, maps the attack surface, correlates CVEs, and produces a technical and executive report. |
+| [`redteam-recon`](redteam-recon/) | 0.2.1 | Reconnaissance triage: analyzes nmap/netstat output, maps the attack surface, correlates CVEs, and produces a technical and executive report. |
 
 ## redteam-recon
 

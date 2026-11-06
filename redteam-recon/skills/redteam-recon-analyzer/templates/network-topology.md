@@ -7,7 +7,7 @@
 - Um `subgraph` por sub-rede; o rótulo traz o CIDR.
 - Forma do nó: `([ ])` gateway/roteador/firewall, `[( )]` banco de dados, `[ ]` servidor, `[/ /]` estação, `{{ }}` ponto de acesso Wi-Fi.
 - Rótulo do nó: `nome<br/>IP<br/>SO · portas-chave`.
-- Classes: `crit` (achado CVSS ≥ 9.0), `high` (7.0–8.9), `eol` (SO fora de suporte), `unk` (não classificado).
+- Classes: `crit` (achado **confirmado** com CVSS ≥ 9.0), `high` (confirmado, 7.0–8.9), `cand` (apenas candidato a confirmar), `eol` (SO fora de suporte), `unk` (não classificado).
 
 ## Diagrama
 
@@ -50,6 +50,7 @@ flowchart TB
     classDef high fill:#ffe4c4,stroke:#d80,color:#000;
     classDef eol fill:#eee,stroke:#666,stroke-dasharray:4 3,color:#000;
     classDef unk fill:#fff,stroke:#999,stroke-dasharray:2 2,color:#000;
+    classDef cand fill:#fff4d6,stroke:#d80,stroke-dasharray:5 3,color:#000;
     class WS1 eol;
     class AD1 high;
 ```
@@ -57,7 +58,7 @@ flowchart TB
 ## Preenchimento
 
 1. Uma linha por host ativo; agrupar por sub-rede inferida do CIDR informado em escopo.
-2. Aplicar `class <id> <classe>` conforme a pior severidade verificada do host.
+2. Aplicar `class <id> <classe>` conforme a pior severidade **confirmada** do host; host com achado apenas candidato usa `cand`.
 3. Ligações sem evidência direta (rota, ARP, traceroute, conexão em `netstat`) usam `-.->` e rótulo com `?`.
 4. Adicionar abaixo do diagrama uma **legenda de evidências**: de onde veio cada gateway e cada ligação.
 

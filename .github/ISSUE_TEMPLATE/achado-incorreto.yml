@@ -1,0 +1,53 @@
+name: Achado incorreto (falso positivo ou negativo)
+description: A skill errou o estado, a severidade ou a CVE de um achado.
+labels: ["calibracao"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Somente dados anonimizados.** IPs dos blocos RFC 5737 (192.0.2.0/24, 198.51.100.0/24, 203.0.113.0/24), hostnames `host-NN`, cliente `CLIENTE-A`. Não cole saída real de coleta.
+  - type: input
+    id: versao
+    attributes:
+      label: Versão do plugin
+      placeholder: "0.2.1"
+    validations:
+      required: true
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo
+      options:
+        - Falso positivo (apontou o que não existe)
+        - Falso negativo (deixou de apontar)
+        - Estado errado (Confirmado × Candidato)
+        - CVE, CVSS ou versão corrigida incorretos
+    validations:
+      required: true
+  - type: textarea
+    id: entrada
+    attributes:
+      label: Trecho da entrada (anonimizado)
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: saida
+    attributes:
+      label: O que a skill disse
+    validations:
+      required: true
+  - type: textarea
+    id: real
+    attributes:
+      label: O que era verdade, e como você sabe
+      description: "Ex.: inventário de pacotes, saída de versão do serviço, boletim do fornecedor."
+    validations:
+      required: true
+  - type: checkboxes
+    id: anon
+    attributes:
+      label: Confirmação
+      options:
+        - label: Revisei o texto e não há IP, hostname ou nome de cliente reais.
+          required: true

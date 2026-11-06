@@ -1,0 +1,20 @@
+# Dados reais de coleta e relatórios de engajamento NÃO entram no repositório.
+# Os modelos em redteam-recon/skills/**/templates/ continuam versionados.
+*.gnmap
+*.nmap
+scan*.xml
+nmap*.xml
+*.pcap
+*.pcapng
+netstat*.txt
+relatorio*.md
+relatorio*.pdf
+report*.md
+report*.pdf
+coleta/
+dados-reais/
+
+# Ambiente local
+.DS_Store
+*.swp
+.claude/settings.local.json

@@ -10,6 +10,8 @@
 | Escopo (faixas/alvos) | _[ex.: 192.0.2.0/24, 198.51.100.0/24]_ |
 | Janela de testes | _[início – fim, fuso]_ |
 | Fontes analisadas | _[nmap -oX, netstat -tulnp, inventário; data da coleta]_ |
+| Fontes de CVE e data da consulta | _[NVD API 2.0, KEV `catalogVersion` ____; data/hora; ou "consulta ao vivo indisponível"]_ |
+| Última verificação do cheatsheet | _[AAAA-MM-DD; avisar se > 90 dias]_ |
 | Natureza da análise | Triagem passiva sobre dados fornecidos; sem exploração |
 | Autor / revisão | [AUTOR] |
 
@@ -97,6 +99,7 @@ Uma ficha por CVE. **Todos os campos obrigatórios**; o que não for confirmado 
 | Explicação conceitual | _[2–3 frases sobre a classe de falha, sem passos de exploração]_ |
 | Ativos afetados | _[IDs A-NN]_ |
 | Base da correlação | _versão / banner / configuração — confiança alta/média/baixa_ |
+| KEV (CISA) | _sim, desde AAAA-MM-DD, ransomware: sim/não/desconhecido · não · consulta indisponível_ |
 | Status | _verificado em [data] / não verificado_ |
 
 ## 9. Remediação priorizada

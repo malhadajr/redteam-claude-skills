@@ -3,6 +3,6 @@
   "version": "0.2.0",
   "description": "Triagem de reconhecimento para red team autorizado: analisa saídas de nmap/netstat, mapeia superfície de ataque, correlaciona CVEs e gera relatório.",
   "author": {
-    "name": "[AUTOR]"
+    "name": "LogosPayload"
   }
 }
